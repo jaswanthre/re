@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>NGOs</h1>
+    <nav>
+      <a href="index.html" id="media">Media</a>
+      <a href="investors.html" id="investors">Investors</a>
+      <a href="careers.html" id="careers">Careers</a>
+      <a href="suppliers.html" id="suppliers">Suppliers and customers</a>
+      <a href="social.html" id="social">Social media</a>
+      <a href="general.html" id="general">General</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="social" class="inactive">
+      <h2>SOCIAL MEDIA </h2>
+     
+      <p>Aramco local (Arabic) - @Saudi_Aramco </p>
+      <div id="hiddenContent" style="display: none;">
+  
+
+       <p> Aramco global (English) - @Aramco
+        
+        Aramco Americas - @Aramco_Americas
+        
+        Aramco Europe - @Aramco_Europeamco as an investment opportunity, please visit our investor relations website at <a href="https://investors.aramco.com">investors.aramco.com</a>.</p>
+      </section>
+    
+      <!-- Add a button to toggle the hidden content -->
+      <button id="readMore">Read More</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;Jashu 2023</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Get references to the button and the hidden content
+    var readMoreButton = document.getElementById('readMore');
+    var hiddenContent = document.getElementById('hiddenContent');
+  
+    // Add a click event listener to the button
+    readMoreButton.addEventListener('click', function() {
+      // Toggle the visibility of the hidden content
+      if (hiddenContent.style.display === 'none') {
+        hiddenContent.style.display = 'block';
+      } else {
+        hiddenContent.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>NGOs</h1>
+    <nav>
+      <a href="index.html" id="media">Media</a>
+      <a href="investors.html" id="investors">Investors</a>
+      <a href="careers.html" id="careers">Careers</a>
+      <a href="suppliers.html" id="suppliers">Suppliers and customers</a>
+      <a href="social.html" id="social">Social media</a>
+      <a href="general.html" id="general">General</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="careers" class="inactive">
+        <h2>Careers</h2>
+        <p>for read more</p>
+        <div id="hiddenContent" style="display: none;">
+          <p>Address</p>
+          <p>Media Relations Division</p>
+          <p>Media & Executive Communications Department - Aramco North Administration Building</p>
+          <p>Dhahran 31311</p>
+          <p>Saudi Arabia</p>
+          <p>For media inquiries, please email us at <a href="mailto:media.inquiries@aramco.com">media.inquiries@aramco.com</a></p>
+          <p>If you are not a journalist but have questions about Aramco, please use the company email address below.</p>
+        </div>
+
+        <button id="readMore">Read More</button>
+      </section>
+  </main>
+
+  <footer>
+    <p>&copy; Jashu 2023</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Get references to the button and the hidden content
+    var readMoreButton = document.getElementById('readMore');
+    var hiddenContent = document.getElementById('hiddenContent');
+  
+    // Add a click event listener to the button
+    readMoreButton.addEventListener('click', function() {
+      // Toggle the visibility of the hidden content
+      if (hiddenContent.style.display === 'none') {
+        hiddenContent.style.display = 'block';
+      } else {
+        hiddenContent.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
